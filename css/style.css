@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFEADD;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloco-tarefas {
+  display: flex;
+  flex-direction: column;
+  width: 28.125rem;
+}
+
+.tarefas-titulo {
+  font-family: 'Quicksand', sans-serif;
+  color: #FF6666;
+}
+
+#newTask {
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  outline: 0;
+}
+
+.adicionar-tarefa {
+  background-color: #FF6666;
+  border: none;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.adicionar-tarefa:hover {
+  background-color: #FF8989;
+  transition: 0.6s;
+  transform: scale(1.06);
+  color: white;
+}
+
+#taskList {
+  width: 28.125rem;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+li {
+  display: flex;
+  padding: 2%;
+  background-color: #FCAEAE;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 0.4rem 0;
+  border-radius: 0.5rem;
+  transition: 0.6s;
+}
+
+li:hover {
+  transform: scale(1.06);
+}
+
+li button {
+  margin-left: 0.5rem;
+  background-color: #FF6666;
+  height: 1.875rem;
+  width: 6.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.botao-editar:hover {
+  background-color: yellow;
+}
+
+.botao-excluir:hover {
+  background-color: red;
+  color: white;
+}
+
+li span {
+  margin-right: 0.5rem;
+  text-transform: capitalize;
+}
+
+li span:hover {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #FF6666;
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
